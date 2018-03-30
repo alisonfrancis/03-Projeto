@@ -18,30 +18,38 @@
     <!-- Fim do include do menu -->
     
     <!-- Conteudo Vai AQUI -->
-    
-    <h1>Conteudo da Home</h1><br>
+                <!-- test -->
+                        <div class="container">
+                            <div class="py-5 text-center">
+                              <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
+                              <h2>Conteudo da Home</h2>
+                              <p class="lead">Below is an example form built entirely with Bootstrap's form controls.
+                                  Each required form group has a validation state that can be triggered by attempting 
+                                  to submit the form without completing it.</p>
+                            </div></div>
+                <!-- fim do test -->
         
         <!-- card da Imagen da home" temporaria - verifica depois "  -->
         <div class="card bg-dark text-white">
             <img class="card-img" src="Imagens/money0.png" alt="Card image">
             <div class="card-img-overlay">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text.</p>
-              <p class="card-text">Last updated 3 mins ago</p>
+              <h3 class="card-title">JSP- Finanças</h3>
+              <p class="card-text">Consuter aqui sistema de amortização.</p>
+              <p class="card-text">SAA/SAC e PRICE</p>
             </div>
         </div>
         <!-- Fim do card da imagen -->
-        <br><h4>Desenvolvido por:</h4>
+        <br>
             <!-- nav com desenvolvedores -->
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Alison Francisco</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Fernando Pedro</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Michel Schaaf</a>
                 </li>
              </ul>
              <div class="tab-content" id="pills-tabContent">
@@ -49,12 +57,12 @@
                     <!-- card dos perfil -->
                         <div class="card text-center border-primary mb-3">
                             <div class="card-header">
-                              Perfil 01
+                              Desenvolvidor por:
                             </div>
                             <div class="card-body text-primary">
                               <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <p class="card-text">...</p>
+                              <a href="https://github.com/alisonfrancis" class="btn btn-primary">Github</a>
                             </div>                         
                         </div>
                     <!-- Fim do card dos perfil-->
@@ -64,12 +72,12 @@
                     <!-- card dos perfil -->
                         <div class="card text-center border-primary mb-3">
                             <div class="card-header">
-                              Perfil 02
+                               Desenvolvidor por:
                             </div>
                             <div class="card-body text-primary">
                               <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <p class="card-text">...</p>
+                              <a href="#" class="btn btn-primary">Github</a>
                             </div>                         
                         </div>
                     <!-- Fim do card dos perfil-->
@@ -78,12 +86,12 @@
                   <!-- card dos perfil -->
                         <div class="card text-center border-primary mb-3">
                             <div class="card-header">
-                              Perfil 03
+                               Desenvolvidor por:
                             </div>
                             <div class="card-body text-primary">
                               <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <p class="card-text">...</p>
+                              <a href="#" class="btn btn-primary">Github</a>
                             </div>                         
                         </div>
                     <!-- Fim do card dos perfil-->

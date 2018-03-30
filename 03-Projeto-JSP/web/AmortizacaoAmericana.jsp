@@ -1,8 +1,9 @@
 <%-- 
-    Document   : TabelaPrice
-    Created on : 27/03/2018, 19:30:08
+    Document   : AmotizacaoAmericana
+    Created on : 27/03/2018, 19:29:49
     Author     : user
 --%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,18 +18,18 @@
     <!-- Fim do include do menu -->
     
     <!-- Conteudo Vai AQUI -->
-          <!-- test -->
+           <!-- test -->
                         <div class="container">
                             <div class="py-5 text-center">
                               <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
-                              <h2>Sistema de Amortização Francês (Tabela Price)</h2>
-                              <p class="lead">É um método usado em amortização de 
-                                  empréstimo cuja principal característica é apresentar 
-                                  prestações (ou parcelas) iguais.</p>
+                              <h2>Sistema de Amortização Americana (SAA/SAM)</h2>
+                              <p class="lead">É uma forma de pagamento de 
+                                  empréstimos que se caracteriza pelo pagamento 
+                                  penas dos juros da dívida,deixando o valor da dívida 
+                                  constante, que pode ser paga em apenas um único pagamento.</p>
                             </div></div>
                 <!-- fim do test -->
-                
-                 <!-- entrada de dados para amotização americana -->
+        <!-- entrada de dados para amotização americana -->
          <center>
             <form>
             <P> Digite os valores no campo abaixo:</p><!--  C = CAPITAL | N = MESES | I = JUROS -->
@@ -50,7 +51,7 @@
     <!-- Fim do conteudo -->
     
     <!-- Inicio do Include do footer -->
-        <%@ include file="WEB-INF/jspf/footer.jspf" %>
+        <%@ include file="WEB-INF/jspf/footer.jspf" %> 
     <!-- Fim do include do footer -->
     
     <!-- Inicio do Include do rodapé manter aqui -->
