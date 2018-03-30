@@ -1,3 +1,24 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+<%@ include file="cabecalho.jspf" %>
+
+                    <!-- Navbar -->
+
+<br>
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <ul class="nav nav-pills nav-fill">
+  <li class="nav-item">
+    <a class="nav-link active" href="Home.jsp">
+     <img src="Imagens/cifrao5.png" width="30" height="30" alt="">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AmotizacaoAmericana.jsp">Amotização Americana</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="AmotizacaoConstante.jsp">Amotização Constante</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="TabelaPrice.jsp">Tabela Price</a>
+  </li>
+</ul>
+</nav><hr>

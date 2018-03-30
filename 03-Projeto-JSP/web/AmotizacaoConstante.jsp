@@ -7,11 +7,27 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
+    
+ <!-- Include Cabeçalho -->
+        <%@ include file="WEB-INF/jspf/cabecalho.jspf" %>
+ <!-- fim do include cabeçalho -->
+ 
     <body>
-        <h1>Hello World!</h1>
+    <!-- Include do menu / Navbar -->
+        <%@ include file="WEB-INF/jspf/menu.jspf" %>
+    <!-- Fim do include do menu -->
+    
+    <!-- Conteudo Vai AQUI -->
+        <h1>Conteudo da Amotização Constante</h1>
+        
+    <!-- Fim do conteudo -->
+    
+    <!-- Inicio do Include do footer -->
+        <%@ include file="WEB-INF/jspf/footer.jspf" %>
+    <!-- Fim do include do footer -->
+    
+    <!-- Inicio do Include do rodapé manter aqui -->
+        <%@ include file="WEB-INF/jspf/rodape.jspf" %>
+    <!-- fin do Include do rodapé -->
     </body>
 </html>

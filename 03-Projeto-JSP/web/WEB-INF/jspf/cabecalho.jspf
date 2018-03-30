@@ -1,3 +1,19 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+
+<!-- 
+            Tag head/meta/e outro links coloca AQUI!
+-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP-Finança</title>
+        <!-- Css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+              crossorigin="anonymous">
+        <!-- fim Css -->
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="Imagens/sem.jpg" />
+        <!-- Fim do Favicon -->
+    </head>
