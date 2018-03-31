@@ -30,7 +30,7 @@
                             </div></div>
                 <!-- fim do test -->
                 
-                 <!-- entrada de dados para amotização americana -->
+                 <!-- entrada de dados para amotização constante -->
          <center>
             <form>
             <P> Digite os valores no campo abaixo:</p><!--  C = CAPITAL | N = MESES | I = JUROS -->
@@ -66,10 +66,15 @@
                  <th>Juros</th>
                  <th>Saldo devedor</th>
              </tr>
+                 <td>0</td>
+                 <td>--x--</td>
+                 <td>--x--</td>
+                 <td>--x--</td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(c) %></td>
              
-             <%  double am=c/n , tam=0;
-                 double sd = c;
-                 double j, tj=0, parcela=0; double tparcela=0; 
+             <%  double am=c/n; /*amortização*/
+                 double sd = c; /*saldo devedor*/
+                 double j, tj=0, parcela=0, tparcela=0, tam=0;
                  for (int ct=1; ct<=n; ct++){
                  j=sd*i/100; tj=tj+j;
                  sd= sd-am;

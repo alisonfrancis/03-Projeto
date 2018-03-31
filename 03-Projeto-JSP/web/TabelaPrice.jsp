@@ -3,6 +3,7 @@
     Created on : 27/03/2018, 19:30:08
     Author     : user
 --%>
+<%@ page import= "java.text.NumberFormat" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,7 +29,7 @@
                             </div></div>
                 <!-- fim do test -->
                 
-                 <!-- entrada de dados para amotização americana -->
+                 <!-- entrada de dados para tabela price -->
          <center>
             <form>
             <P> Digite os valores no campo abaixo:</p><!--  C = CAPITAL | N = MESES | I = JUROS -->
@@ -46,7 +47,66 @@
              </div></div>
             <hr>
         <!-- fim -->
+        <%try{%>
         
+         <%int n = Integer.parseInt(request.getParameter("n"));
+         double c = Double.parseDouble(request.getParameter("c").replace(',','.'));
+         double i = Double.parseDouble(request.getParameter("i").replace(',','.'));
+         %>
+         
+        <div class="container">
+        <h2>Resultado da pesquisa:</h2>           
+        <table class="table table-striped">
+            <tr>
+                 <th>num.</th>
+                 <th>Prestação</th>
+                 <th>Amortizações</th>
+                 <th>Juros</th>
+                 <th>Saldo devedor</th>
+             </tr>
+                 <td>0</td>
+                 <td>--x--</td>
+                 <td>--x--</td>
+                 <td>--x--</td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(c) %></td>
+             
+             <%  
+                 double saldoanterior=c;
+                 double j=0,tj=0, am=0,tam=0, sd=0;
+                 double aux=Math.pow((1+i/100),n);
+                 double prest = c*aux*(i/100)/(aux-1), tprest=0;
+
+                 for (int ct=1; ct<=n; ct++){
+                     j=saldoanterior*(i/100); tj=tj+j;
+                     am=prest-j; tam=tam+am;
+                     sd=saldoanterior - am;
+                     saldoanterior = sd;
+                     tprest=tprest+prest;
+             %>
+  
+             <tr>
+                 <td><%= ct %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(prest) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(am) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(j) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(sd) %></td>
+             </tr>
+             <%}%>
+             
+             <tr>
+                 <th>Total:</th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tprest) %></th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tam) %></th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tj) %></th>
+                 <th>---x---</th>
+             </tr>
+          
+         </table>
+         </div>
+        <%} catch(Exception ex){%>
+
+        Preencha corretamente todos os campos acima.
+<%}%>        
     <!-- Fim do conteudo -->
     
     <!-- Inicio do Include do footer -->

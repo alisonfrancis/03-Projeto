@@ -14,7 +14,7 @@
  
     <body>
     <!-- Include do menu / Navbar -->
-        <%@ include file="WEB-INF/jspf/menu.jspf" %>
+        <%@ include file="WEB-INF/jspf/menu.jspf" %>arcelas
     <!-- Fim do include do menu -->
     
     <!-- Conteudo Vai AQUI -->
