@@ -3,13 +3,13 @@
 
 
                     <!-- Navbar -->
-
+<!--
 <br>
 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <ul class="nav nav-pills nav-fill">
   <li class="nav-item">
     <a class="nav-link" href="Home.jsp">
-     <img src="Imagens/dinheiroweb.png" width="30" height="30" alt="">HOME</a>
+     <img src="Imagens/logom.png" width="131" height="90" alt="">HOME</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="AmortizacaoAmericana.jsp">Amortização Americana</a>
@@ -21,4 +21,17 @@
     <a class="nav-link" href="TabelaPrice.jsp">Tabela Price</a>
   </li>
 </ul>
+</nav>
+-->
+
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;"> 
+  <ul class="nav nav-pills nav-fill">  
+  <form class="form-inline">
+      <a class="nav-link" href="Home.jsp"><img src="Imagens/logom.png" width="131" height="90" alt=""></a>
+      <a href="Home.jsp"><button class="btn btn-outline-success" type="button">Home</button></a>&nbsp
+      <a href="AmortizacaoAmericana.jsp"><button class="btn btn-outline-success" type="button">Amortização Americana</button></a>&nbsp
+      <a href="AmortizacaoConstante.jsp"><button class="btn btn-outline-success" type="button">Amortização Constante</button></a>&nbsp
+      <a href="TabelaPrice.jsp"><button class="btn btn-outline-success" type="button">Tabela Price</button></a>
+  </form>   
 </nav>
