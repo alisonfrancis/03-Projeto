@@ -4,6 +4,7 @@
     Author     : user
 --%>
 
+<%@page import="java.text.NumberFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -47,7 +48,64 @@
              </div></div>
             <hr>
         <!-- fim -->
+            <%try{%>
         
+         <%int n = Integer.parseInt(request.getParameter("n"));
+         double c = Double.parseDouble(request.getParameter("c").replace(',','.'));
+         double i = Double.parseDouble(request.getParameter("i").replace(',','.'));
+         %>
+         
+        <div class="container">
+        <h2>Resultado da pesquisa:</h2>           
+        <table class="table table-striped">
+            <tr>
+                 <th>num.</th>
+                 <th>Parcelas</th>
+                 <th>Amortizações</th>
+                 <th>Juros</th>
+                 <th>Saldo devedor</th>
+             </tr>
+                 <td>0</td>
+                 <td>--x--</td>
+                 <td>--x--</td>
+                 <td>--x--</td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(c) %></td>
+             
+             <%  double am=0; /*amortização*/
+                 double sd = c; /*saldo devedor*/
+                 double j, tj=0, parcela=0, tparcela=0, tam=0;
+                 for (int ct=1; ct<=n; ct++){
+                 j=sd*i/100;
+                 tj=tj+j;
+                 sd= sd-am;
+                 if(ct==n){am=c;}
+                 parcela = am +j; tparcela=tparcela+parcela;
+                 tam=tam+am;
+             %>
+  
+             <tr>
+                 <td><%= ct %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(parcela) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(am) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(j) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(sd) %></td>
+             </tr>
+             <%}%>
+             
+             <tr>
+                 <th>Total:</th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tparcela) %></th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tam) %></th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tj) %></th>
+                 <th>---x---</th>
+             </tr>
+          
+         </table>
+         </div>
+        <%} catch(Exception ex){%>
+
+        Preencha corretamente todos os campos acima.
+<%}%>
     <!-- Fim do conteudo -->
     
     <!-- Inicio do Include do footer -->
