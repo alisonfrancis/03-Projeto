@@ -4,10 +4,11 @@
     Author     : user
 --%>
 
+<%@ page import= "java.text.NumberFormat" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
-    
  <!-- Include Cabeçalho -->
         <%@ include file="WEB-INF/jspf/cabecalho.jspf" %>
  <!-- fim do include cabeçalho -->
@@ -47,6 +48,58 @@
              </div></div>
             <hr>
         <!-- fim -->
+        
+        <%try{%>
+        
+         <%int n = Integer.parseInt(request.getParameter("n"));
+         double c = Double.parseDouble(request.getParameter("c").replace(',','.'));
+         double i = Double.parseDouble(request.getParameter("i").replace(',','.'));
+         %>
+         
+        <div class="container">
+        <h2>Resultado da pesquisa:</h2>           
+        <table class="table table-striped">
+            <tr>
+                 <th>num.</th>
+                 <th>Parcelas</th>
+                 <th>Amortizações</th>
+                 <th>Juros</th>
+                 <th>Saldo devedor</th>
+             </tr>
+             
+             <%  double am=c/n , tam=0;
+                 double sd = c;
+                 double j, tj=0, parcela=0; double tparcela=0; 
+                 for (int ct=1; ct<=n; ct++){
+                 j=sd*i/100; tj=tj+j;
+                 sd= sd-am;
+                 parcela = am +j; tparcela=tparcela+parcela;
+                 tam=tam+am;
+             %>
+  
+             <tr>
+                 <td><%= ct %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(parcela) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(am) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(j) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(sd) %></td>
+             </tr>
+             <%}%>
+             
+             <tr>
+                 <th>Total:</th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tparcela) %></th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tam) %></th>
+                 <th><%= NumberFormat.getCurrencyInstance().format(tj) %></th>
+                 <th>---x---</th>
+             </tr>
+          
+         </table>
+         </div>
+        <%} catch(Exception ex){%>
+
+        Preencha corretamente todos os campos acima.
+<%}%>
         
     <!-- Fim do conteudo -->
     
