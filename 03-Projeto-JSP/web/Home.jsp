@@ -46,7 +46,7 @@
                  <br>
                   <br>
                 <p>Amortização Constante</p>
-                <p><a class="btn btn-lg btn-primary" href="AmortizacaoConstante.jsp" role="button">Calcular</a></p>
+                <p><a class="btn btn-lg btn-success" href="AmortizacaoConstante.jsp"role="button">Calcular</a></p>
               </div>
             </div>
           </div>
@@ -58,7 +58,7 @@
                  <br>
                   <br>
                 <p>Amortização Americana</p>
-                <p><a class="btn btn-lg btn-primary" href="AmortizacaoAmericana.jsp" role="button">Calcular</a></p>
+                <p><a class="btn btn-lg btn-success" href="AmortizacaoAmericana.jsp" role="button">Calcular</a></p>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@
                 <br>
                  <br>
                 <p>Amortização Francesa (Tabela Price)</p>
-                <p><a class="btn btn-lg btn-primary" href="TabelaPrice.jsp" role="button">Calcular</a></p>
+                <p><a class="btn btn-lg btn-success" href="TabelaPrice.jsp" role="button">Calcular</a></p>
               </div>
             </div>
           </div>
