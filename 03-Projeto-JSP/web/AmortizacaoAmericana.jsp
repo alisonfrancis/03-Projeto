@@ -35,7 +35,7 @@
             <form>
             <P> Digite os valores no campo abaixo:</p><!--  C = CAPITAL | N = MESES | I = JUROS -->
             <table>
-            <tr><td><input class="form-control" type="text" name="c" placeholder="Volor Capital"></td></tr>
+            <tr><td><input class="form-control" type="text" name="c" placeholder="Valor Capital"></td></tr>
            
             <tr><td><input class="form-control" type="text" name="i" placeholder="Taxa juros"></td></tr>
            
