@@ -22,7 +22,7 @@
           <!-- test -->
                         <div class="container">
                             <div class="py-5 text-center">
-                              <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
+                              <!--<img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">-->
                               <h2>Sistema de Amortização Constante (SAC)</h2>
                               <p class="lead">É uma forma de amortização de um 
                                   empréstimo por prestações que incluem os juros, 

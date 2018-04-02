@@ -21,7 +21,7 @@
           <!-- test -->
                         <div class="container">
                             <div class="py-5 text-center">
-                              <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
+                              <!--<img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">-->
                               <h2>Sistema de Amortização Francês (Tabela Price)</h2>
                               <p class="lead">É um método usado em amortização de 
                                   empréstimo cuja principal característica é apresentar 
