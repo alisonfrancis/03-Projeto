@@ -25,13 +25,13 @@
 -->
 
 
-<nav class="navbar navbar-light" style="background-color: #e3f2fd;"> 
+<nav class="navbar navbar-light" style="background-color: #77788C;"> 
   <ul class="nav nav-pills nav-fill">  
   <form class="form-inline">
-      <a class="nav-link" href="Home.jsp"><img src="Imagens/logom.png" width="131" height="90" alt=""></a>
-      <a href="Home.jsp"><button class="btn btn-outline-success" type="button">Home</button></a>&nbsp
-      <a href="AmortizacaoAmericana.jsp"><button class="btn btn-outline-success" type="button">Amortização Americana</button></a>&nbsp
-      <a href="AmortizacaoConstante.jsp"><button class="btn btn-outline-success" type="button">Amortização Constante</button></a>&nbsp
-      <a href="TabelaPrice.jsp"><button class="btn btn-outline-success" type="button">Tabela Price</button></a>
+      <a class="nav-link" href="Home.jsp"><img src="Imagens/logompb.png" width="131" height="90" alt=""></a>
+      <a href="Home.jsp"><button class="btn btn-outline-light" type="button">Home</button></a>&nbsp
+      <a href="AmortizacaoAmericana.jsp"><button class="btn btn-outline-light" type="button">Amortização Americana</button></a>&nbsp
+      <a href="AmortizacaoConstante.jsp"><button class="btn btn-outline-light" type="button">Amortização Constante</button></a>&nbsp
+      <a href="TabelaPrice.jsp"><button class="btn btn-outline-light" type="button">Tabela Price</button></a>
   </form>   
 </nav>

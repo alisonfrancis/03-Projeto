@@ -22,7 +22,7 @@
           <!-- test -->
                         <div class="container">
                             <div class="py-5 text-center">
-                              <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
+                             <!-- <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72"-->
                               <h2>Sistema de Amortização Constante (SAC)</h2>
                               <p class="lead">É uma forma de amortização de um 
                                   empréstimo por prestações que incluem os juros, 
@@ -41,7 +41,7 @@
            
             <tr><td><input class="form-control" type="text" name="n" placeholder="Meses"></td></tr>
             </table>
-            <br><input class="bttbody btn btn-primary" type="submit" name="enviar" value="Calcular"></td></tr>
+            <br><input class="bttbody btn btn-secondary" type="submit" name="enviar" value="Calcular"></td></tr>
               
             </form>
             </center>

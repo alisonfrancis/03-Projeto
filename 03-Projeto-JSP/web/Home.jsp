@@ -13,7 +13,7 @@
  <!-- fim do include cabeçalho -->
  
     <body>
-         <link href="css/css.css" rel="stylesheet">
+        
     <!-- Include do menu / Navbar -->
         <%@ include file="WEB-INF/jspf/menu.jspf" %>
     <!-- Fim do include do menu -->
@@ -23,7 +23,7 @@
                 
                         <div class="container">
                             <div class="py-5 text-center">
-                              <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
+                              <!--<img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">-->
                               <h2>JSP - Finanças</h2>
                               <p class="lead">O melhor sistema para calcular amortização constante e amortização americana e Price</p>
                             </div></div>
@@ -39,7 +39,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+            <img class="first-slide" src="Imagens/calculator0.png" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-center">
                 <h1>Calcule aqui</h1>
@@ -51,7 +51,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+            <img class="second-slide" src="Imagens/money3.png" alt="Second slide">
             <div class="container">
               <div class="carousel-caption text-center">
                 <h1>Calcule aqui</h1>
@@ -63,7 +63,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+            <img class="third-slide" src="Imagens/money0.png" alt="Third slide">
             <div class="container">
               <div class="carousel-caption text-center">
                 <h1>Calcule aqui</h1>
@@ -95,7 +95,7 @@
             <img class="rounded-circle" src="Imagens/ftmichel.png" alt="Generic placeholder image" width="140" height="140">
             <h2>Michel Schaaf</h2>
             <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
-            <p><a class="btn btn-secondary" href=https://github.com/AlexRFX\" role="button">Perfil do GitHub</a></p>
+            <p><a class="btn btn-secondary" href="https://github.com/MichelSchaaf" role="button">Perfil do GitHub</a></p>
           </div>
           <div class="col-lg-4">
             <img class="rounded-circle" src="Imagens/ftfernando.png" alt="Generic placeholder image" width="140" height="140">

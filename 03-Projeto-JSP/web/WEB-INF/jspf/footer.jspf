@@ -3,7 +3,7 @@
 
 
 <hr><br>
-        <footer class="container">
-             <p class="float-right"><a href="#">Back to top</a></p>
-                <p>&copy; 2018 Fatec, Pg. &middot; <a href="https://github.com/alisonfrancis/03-Projeto">Site do Projeto</a></p>
+        <footer class="container footer-css">
+            <p class="float-right"><a href="#" class="link">Back to top</a></p>
+                <p>&copy; 2018 Fatec, Pg. &middot; <a href="https://github.com/alisonfrancis/03-Projeto" class="link">Site do Projeto</a></p>
         </footer>
