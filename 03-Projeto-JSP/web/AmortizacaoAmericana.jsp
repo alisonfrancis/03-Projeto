@@ -22,7 +22,7 @@
            <!-- test -->
                         <div class="container">
                             <div class="py-5 text-center">
-                             <!-- <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">-->
+                              <img class="d-block mx-auto mb-4" src="Imagens/dinheiroweb.png" alt="" width="72" height="72">
                               <h2>Sistema de Amortização Americana (SAA/SAM)</h2>
                               <p class="lead">É uma forma de pagamento de 
                                   empréstimos que se caracteriza pelo pagamento 
@@ -41,7 +41,7 @@
            
             <tr><td><input class="form-control" type="text" name="n" placeholder="Meses"></td></tr>
             </table>
-            <br><input class="bttbody btn btn-secondary" type="submit" name="enviar" value="Calcular"></td></tr>
+            <br><input class="bttbody btn btn-primary" type="submit" name="enviar" value="Calcular"></td></tr>
               
             </form>
             </center>
@@ -57,7 +57,7 @@
          
         <div class="container">
         <h2>Resultado da pesquisa:</h2>           
-        <table class="table table-hover">
+        <table class="table table-striped">
             <tr>
                  <th>num.</th>
                  <th>Parcelas</th>
@@ -84,11 +84,11 @@
              %>
   
              <tr>
-                 <td scope="row"><%= ct %></td>
-                 <td scope="row"><%= NumberFormat.getCurrencyInstance().format(parcela) %></td>
-                 <td scope="row"><%= NumberFormat.getCurrencyInstance().format(am) %></td>
-                 <td scope="row"><%= NumberFormat.getCurrencyInstance().format(j) %></td>
-                 <td scope="row"><%= NumberFormat.getCurrencyInstance().format(sd) %></td>
+                 <td><%= ct %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(parcela) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(am) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(j) %></td>
+                 <td><%= NumberFormat.getCurrencyInstance().format(sd) %></td>
              </tr>
              <%}%>
              

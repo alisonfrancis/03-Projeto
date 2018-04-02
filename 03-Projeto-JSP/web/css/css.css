@@ -6,7 +6,6 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
-  background-color: #EFEFF0;
 }
 
 
@@ -89,18 +88,4 @@ body {
   .featurette-heading {
     margin-top: 7rem;
   }
-}
-/* footer css */
-.footer-css{
-    background-color: #77788C;
-    margin: 0px;
-    padding: 1.25em;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-/* cor dos link*/
-.link{
-    color: #EFEFF0;
 }
