@@ -104,8 +104,8 @@
             <p><a class="btn btn-secondary" href="https://github.com/fernando0123" role="button">Perfil do GitHub</a></p>
           </div>
           <div class="col-lg-4">
-            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-            <h2>Alisson Francisco</h2>
+            <img class="rounded-circle" src="Imagens/ftAlison.png" alt="Generic placeholder image" width="140" height="140">
+            <h2>Alison Francisco</h2>
             <p>Estudante de Análise e Desenvolvimento de Sistemas.</p>
             <p><a class="btn btn-secondary" href="https://github.com/alisonfrancis" role="button">Perfil do GitHub</a></p>
           </div>
